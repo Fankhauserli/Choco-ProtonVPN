@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Test Chocopackage
-        run: choco install packageName --debug --verbose --source ./src
+        run: choco install ProtonVPN --debug --verbose --source ./src
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -38,4 +38,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Push to Choco
-        run: choco push ./src/ProtonVPN.nupkg --source https://push.chocolatey.org/
+        run: choco push ./src/ProtonVPN.nupkg --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
