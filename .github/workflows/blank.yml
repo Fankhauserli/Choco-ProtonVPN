@@ -27,7 +27,7 @@ jobs:
       - name: pack package
         run: choco pack .\src\ProtonVPN.nuspec
       - name: Test Chocopackage
-        run: choco install protonvpn --debug --verbose --force --pre --source .
+        run: choco install protonvpn --debug --verbose --force --pre --source ".;https://community.chocolatey.org/api/v2/"
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
