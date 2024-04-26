@@ -24,10 +24,10 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: test
-        run: dir
+      - name: pack package
+        run: choco pack .\src\ProtonVPN.nuspec
       - name: Test Chocopackage
-        run: choco install ProtonVPN --debug --verbose --source ./src/ProtonVPN.nuspec --pre
+        run: choco install protonvpn --debug --verbose --force --pre --source .
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -38,7 +38,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
+      
+      - name: pack package
+        run: choco pack .\src\ProtonVPN.nuspec
       # Runs a single command using the runners shell
       - name: Push to Choco
-        run: choco push ./src/ProtonVPN.nuspec --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
+        run: choco push .\src\ProtonVPN.nuspec --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
