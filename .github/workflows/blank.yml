@@ -43,4 +43,4 @@ jobs:
         run: choco pack .\src\ProtonVPN.nuspec
       # Runs a single command using the runners shell
       - name: Push to Choco
-        run: choco push .\src\ProtonVPN.nuspec --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
+        run: choco push .*.nupkg --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
