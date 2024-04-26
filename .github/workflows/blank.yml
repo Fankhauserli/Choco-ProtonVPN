@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: test
-        run: ls -la
+        run: dir
       - name: Test Chocopackage
         run: choco install ProtonVPN --debug --verbose --source ./src/ProtonVPN.nupkg
   # This workflow contains a single job called "build"
