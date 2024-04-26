@@ -41,6 +41,8 @@ jobs:
       
       - name: pack package
         run: choco pack .\src\ProtonVPN.nuspec
+      - name: rename Package
+        run: mv .\*.nupkg .\ProtonVPN.nupkg
       # Runs a single command using the runners shell
       - name: Push to Choco
-        run: choco push .*.nupkg --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
+        run: choco push ./ProtonVPN.nupkg --source https://push.chocolatey.org/ --api-key ${{ secrets.API_Key }}
