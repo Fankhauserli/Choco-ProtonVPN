@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>protonvpn</id>
-    <title>ProtonVPN</title>
+    <id>protonvpn-fankhauserli</id>
+    <title>ProtonVPN-fankhauserli</title>
     <version>3.2.11</version>
     <packageSourceUrl>https://github.com/Fankhauserli/Choco-ProtonVPN/tree/main</packageSourceUrl>
     <authors>ProtonVPN AG</authors>
@@ -29,7 +29,7 @@ If 32bit support is needed, the last package version supporting this is [2.4.1](
 This package update to GitHub releases only. 2.4.2, 2.4.3 are not on GitHub releases.
     </description>
     <projectUrl>https://protonvpn.com/</projectUrl>
-    <tags>admin vpn tor security privacy multi-platform</tags>
+    <tags>vpn</tags>
     <projectSourceUrl>https://github.com/ProtonVPN/win-app</projectSourceUrl>
     <copyright>ProtonVPN AG</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
