@@ -4,7 +4,7 @@ $URL='https://github.com/ProtonVPN/win-app/releases/download/3.2.11/ProtonVPN_v3
 $checksum='eb37bf757a2613e6b5c0d328e9b27c64902249c510d8883593e83ff289794aa0'
 
 $packageArgs = @{
-  packageName    = 'protonvpn'
+  packageName    = 'protonvpn-fankhauserli'
   fileType       = $URL.Split(".")[$URL.Split(".").Length-1]
   url            = $URL
   silentArgs     = '/silent'
