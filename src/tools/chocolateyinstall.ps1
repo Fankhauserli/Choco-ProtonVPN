@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop';
 
-$URL='https://github.com/ProtonVPN/win-app/releases/download/v4.3.14/ProtonVPN_vv4.3.14.exe'
-$checksum='80e848be5cecb5d205bab62d56aa3a75022e840095342ef574be011d4f8da840'
+$URL='https://github.com/ProtonVPN/win-app/releases/download/v4.4.0/ProtonVPN_vv4.4.0.exe'
+$checksum='1bbc338b5e8e4d6f67548fddb23be9657667255933506cbd9a0ba8d035d54424'
 
 $packageArgs = @{
   packageName    = 'protonvpn-fankhauserli'
